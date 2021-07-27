@@ -1,0 +1,235 @@
+/* Global Prop  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  /* height: 100vh; */
+  padding: 20px 0;
+}
+.one {
+  background-color: #1abc9c;
+}
+.two {
+  background-color: #e67e22;
+}
+.three {
+  background-color: #27ae60;
+}
+.four {
+  background-color: #f39c12;
+}
+.five {
+  background-color: #3498db;
+}
+.sex {
+  background-color: #8e44ad;
+}
+.seven {
+  background-color: #2c3e50;
+}
+.eight {
+  background-color: #c0392b;
+}
+/* Start Grid System */
+.grid {
+  width: 70%;
+  height: 300px;
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.grid div,
+.flex div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+.grid .one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.grid .two {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid .three {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.grid .four {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.grid .five {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.grid .sex {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.grid .seven {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.grid .eight {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+/* start Flex System */
+.flex {
+  width: 70%;
+  height: 300px;
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex .one {
+  flex-basis: calc((100%) / 3);
+  height: 50%;
+}
+.flex .two-three {
+  flex-basis: calc((100%) / 2.1);
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex .two {
+  height: 50%;
+  flex-basis: 100%;
+}
+.flex .three {
+  height: 50%;
+  flex-basis: 100%;
+}
+.flex .four {
+  height: 50%;
+  flex-basis: calc((100%) / 5.3);
+}
+.flex .five-sex-seven {
+  flex-basis: calc((100%) / 1.66);
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex .five {
+  height: 50%;
+  flex-basis: 70%;
+}
+.flex .sex {
+  height: 50%;
+  flex-basis: 30%;
+}
+.flex .seven {
+  height: 50%;
+  flex-basis: 100%;
+}
+.flex .eight {
+  height: calc((100%) / 2);
+  flex-basis: calc((100%) - ((100%) / 1.66));
+}
+/* start Floating System */
+.float {
+  width: 70%;
+  height: 300px;
+  margin: 20px auto;
+  text-transform: capitalize;
+  color: #fff;
+}
+.float .one,
+.float .two,
+.float .three,
+.float .four,
+.float .five,
+.float .sex,
+.float .seven,
+.float .eight {
+  font-weight: 600;
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+.float .one {
+  float: left;
+  width: calc((100%) / 3);
+  height: 50%;
+  line-height: 150px;
+}
+.float .two-three {
+  float: left;
+  width: calc((100%) / 2.1);
+  height: 50%;
+}
+.float .two-three .two {
+  width: 100%;
+  height: 50%;
+  line-height: 80px;
+}
+.float .two-three .three {
+  width: 100%;
+  height: 50%;
+  line-height: 80px;
+}
+.float .four {
+  float: left;
+  height: 50%;
+  width: calc((100%) / 5.25);
+  line-height: 150px;
+}
+.float .five-sex-seven {
+  width: calc((100%) / 1.66);
+  height: 50%;
+  float: left;
+}
+.float .five {
+  float: left;
+  height: 50%;
+  width: 70%;
+  line-height: 80px;
+}
+.float .sex {
+  float: left;
+  height: 50%;
+  width: 30%;
+  line-height: 80px;
+}
+.float .seven {
+  height: 50%;
+  width: 100%;
+  line-height: 80px;
+}
+.float .eight {
+  float: right;
+  height: calc((100%) / 2);
+  width: calc((100%) - ((100%) / 1.66));
+  line-height: 150px;
+}
